@@ -1,0 +1,40 @@
+@import url(header.css);
+@import url(footer.css);
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+#registro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #ebebeb;
+    width: 60%;
+}
+input{
+    margin: 10px;
+}
+.cuadro{
+    width: 80%;
+    height: 1.5rem;
+    border: none;
+    padding: 10px;
+}
+#boton{
+    background-color:#EAC926;
+    color:black ;
+    border: none;
+    width: 30%;
+    height: 2rem;
+    border-radius: 5%; 
+    margin: 20px;
+}
+#boton:hover{
+    background-color: #0022AA;
+    color: #ebebeb;
+    transition: 0.5s;
+}

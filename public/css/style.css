@@ -1,0 +1,101 @@
+@import url(header.css);
+@import url(footer.css);
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    background-color: #ebebeb;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.articulo{
+    width: 90%;
+    margin-bottom: 10px;
+    background-color: white;
+    text-align: left;
+   
+}
+.titulo{
+    font-size: 1.4rem;
+    color: #666;
+    position: relative;
+    margin-left: 20px;
+}
+.descripcion{
+    display: flex;
+    border-top: solid 1px #ebebeb;
+    position: relative;
+    left: 15px;
+}
+.precio{
+    font-size: 18px;
+    flex-grow: 0.3;
+}
+.oferta{
+    font-size: 18px;
+    color: #39b54a;
+    flex-grow: 0.7;
+}
+.Envio{
+    order: 1;
+    box-sizing: border-box;
+    position: absolute;
+    top: -15px;
+    right: 30px;
+}
+.fa-truck{
+    text-align: center;
+    font-size: 16px;
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+}
+h4{
+    position: relative;
+    left: 15px;
+    color: #666;
+    display: none;
+}
+.articulo:hover h4 {
+    display: block;
+    transition: 0.5s;
+}
+.articulo:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    transition: 0.5s;
+}
+.articulo:hover .Envio{
+    transform: rotate(-90deg);
+    transition: 0.5s;
+}
+@media (min-width: 426px){
+    section{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .articulo{
+        width: 45%;
+    }
+}
+@media (min-width: 769px){
+    .articulo{
+        width: 20%;
+    }
+    .fa-truck{
+        font-size: 20px;
+        padding: 8px;
+        width: 25px;
+        height: 25px;
+    }
+    .titulo{
+        font-size: 30px;
+        margin-left: 35px;
+    }
+    
+}
